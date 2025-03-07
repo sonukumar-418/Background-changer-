@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('wallpaper.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            animation: imageChange infinite 50s ease-in-out ;
+        }
+
+        @keyframes imageChange {
+            0% {
+                background-image: url('wallpaper.jpg');
+            }
+
+            20% {
+                background-image: url('wallpaper2.jpg');
+            }
+
+            40% {
+                background-image: url('wallpaper3.png');
+            }
+
+            60% {
+                background-image: url('wallpaper4.png');
+            }
+
+            
+            80% {
+                background-image: url('wallpaper5.png');
+            }
+
+            100% {
+                background-image: url('wallpaper6.png');
+            }
+        }
+
+        h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 150px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        button {
+            background-color: #7fb4e0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="time">hi</h1>
+    <button id="play-button">
+        Play Music
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

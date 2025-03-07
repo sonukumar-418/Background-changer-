@@ -1,0 +1,28 @@
+{
+    "name": "Mind peace",
+    "description": "Mind peace",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon16.png",
+        "128": "icon16.png"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "author": "Rohit chauhan",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Mind peace"
+        
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    }
+}
